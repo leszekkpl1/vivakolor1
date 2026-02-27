@@ -4,13 +4,13 @@ import { useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo-viva-kolor.webp";
 
 const navLinks = [
-  { href: "#hero", label: "Strona główna" },
-  { href: "#o-nas", label: "O nas" },
-  { href: "#oferta", label: "Oferta" },
-  { href: "#cennik", label: "Cennik" },
-  { href: "#opinie", label: "Opinie" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "#hero", label: "Strona główna", color: "text-orange-700", mobileColor: "text-orange-400" },
+  { href: "#o-nas", label: "O nas", color: "text-orange-400", mobileColor: "text-orange-300" },
+  { href: "#oferta", label: "Oferta", color: "text-yellow-500", mobileColor: "text-yellow-300" },
+  { href: "#cennik", label: "Cennik", color: "text-green-400", mobileColor: "text-green-300" },
+  { href: "#opinie", label: "Opinie", color: "text-green-700", mobileColor: "text-green-500" },
+  { href: "#faq", label: "FAQ", color: "text-blue-500", mobileColor: "text-blue-400" },
+  { href: "#kontakt", label: "Kontakt", color: "text-purple-500", mobileColor: "text-purple-400" },
 ];
 
 const Header = () => {
@@ -58,7 +58,7 @@ const Header = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-              className="font-medium text-sm transition-colors hover:text-primary text-foreground"
+              className={`font-medium text-sm transition-colors hover:opacity-70 ${link.color}`}
             >
               {link.label}
             </a>
@@ -101,7 +101,7 @@ const Header = () => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-                  className="text-xl font-semibold transition-colors hover:text-primary text-primary-foreground"
+                  className={`text-xl font-semibold transition-colors hover:opacity-70 ${link.mobileColor}`}
                 >
                   {link.label}
                 </a>
