@@ -17,7 +17,7 @@ const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 parallax-ken-burns"
-        style={{ backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 30%' }}
+        style={{ backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 14%' }}
       >
         <div className="absolute inset-0 bg-foreground/60" />
       </div>
