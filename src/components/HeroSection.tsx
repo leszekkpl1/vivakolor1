@@ -17,7 +17,7 @@ const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 parallax-ken-burns"
-        style={{ backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 40%' }}
+        style={{ backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 55%', backgroundSize: '100% auto' }}
       >
         <div className="absolute inset-0 bg-foreground/60" />
       </div>
@@ -38,9 +38,17 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
             Jedyne takie studio kreatywnego malowania w Gdańsku. Masz dość „nie dotykaj",
             „nie brudź", „uważaj"? U nas obowiązuje tylko jedna zasada:{" "}
-            <strong className="text-secondary">
-              <span className="hidden md:inline">MALUJ JAK CHCESZ. GDZIE CHCESZ. CZYM CHCESZ.</span>
-              <span className="md:hidden">MALUJ JAK CHCESZ. GDZIE CHCESZ.<br />CZYM CHCESZ.</span>
+            <strong>
+              <span className="hidden md:inline">
+                <span className="text-secondary">MALUJ JAK CHCESZ.</span>{" "}
+                <span className="text-green-400">GDZIE CHCESZ.</span>{" "}
+                <span className="text-blue-400">CZYM CHCESZ.</span>
+              </span>
+              <span className="md:hidden flex flex-col">
+                <span className="text-secondary">MALUJ JAK CHCESZ.</span>
+                <span className="text-green-400">GDZIE CHCESZ.</span>
+                <span className="text-blue-400">CZYM CHCESZ.</span>
+              </span>
             </strong>
           </p>
 
