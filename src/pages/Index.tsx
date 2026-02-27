@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import OffersSection from "@/components/OffersSection";
+import ParallaxDivider from "@/components/ParallaxDivider";
+import PricingSection from "@/components/PricingSection";
+import BookingWidget from "@/components/BookingWidget";
+import FAQSection from "@/components/FAQSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import artistNeonImg from "@/assets/artist-neon.webp";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <OffersSection />
+        <ParallaxDivider
+          image={artistNeonImg}
+          alt="Artysta malujący neonowymi farbami w ciemnym studio – sesja FLUO w Viva Kolor Gdańsk"
+          overlay="neon"
+        />
+        <PricingSection />
+        <BookingWidget />
+        <FAQSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </>
   );
 };
 

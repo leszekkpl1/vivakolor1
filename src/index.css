@@ -1,96 +1,104 @@
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource/poppins/800.css';
+@import '@fontsource/montserrat/700.css';
+@import '@fontsource/montserrat/800.css';
+@import '@fontsource/montserrat/900.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 240 10% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 98%;
+    --card-foreground: 240 10% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 10% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 82% 52%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 100% 55%;
+    --secondary-foreground: 240 10% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 5% 93%;
+    --muted-foreground: 240 5% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 160 70% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 5% 87%;
+    --input: 240 5% 87%;
+    --ring: 340 82% 52%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Viva Kolor tokens */
+    --neon-green: 120 100% 50%;
+    --neon-pink: 320 100% 60%;
+    --neon-yellow: 55 100% 55%;
+    --neon-blue: 220 100% 60%;
+    --neon-orange: 25 100% 55%;
+
+    --fluo-bg: 260 60% 8%;
+    --fluo-surface: 260 40% 14%;
+    --fluo-text: 260 20% 92%;
+
+    --gradient-rainbow: linear-gradient(135deg, hsl(0 85% 55%), hsl(45 100% 55%), hsl(120 80% 45%), hsl(220 90% 55%), hsl(280 80% 55%));
+    --gradient-neon: linear-gradient(135deg, hsl(var(--neon-green)), hsl(var(--neon-blue)), hsl(var(--neon-pink)));
+
+    --shadow-neon-green: 0 0 20px hsl(120 100% 50% / 0.4);
+    --shadow-neon-pink: 0 0 20px hsl(320 100% 60% / 0.4);
+    --shadow-colorful: 0 8px 32px hsl(340 82% 52% / 0.2);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 260 60% 8%;
+    --foreground: 260 20% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 260 40% 14%;
+    --card-foreground: 260 20% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 260 40% 14%;
+    --popover-foreground: 260 20% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 120 100% 50%;
+    --primary-foreground: 260 60% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 320 100% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 260 30% 20%;
+    --muted-foreground: 260 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 55 100% 55%;
+    --accent-foreground: 260 60% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 260 30% 22%;
+    --input: 260 30% 22%;
+    --ring: 120 100% 50%;
   }
 }
 
@@ -99,7 +107,95 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-rainbow {
+    background: var(--gradient-rainbow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-rainbow {
+    background: var(--gradient-rainbow);
+  }
+
+  .bg-gradient-neon {
+    background: var(--gradient-neon);
+  }
+
+  .shadow-neon-green {
+    box-shadow: var(--shadow-neon-green);
+  }
+
+  .shadow-neon-pink {
+    box-shadow: var(--shadow-neon-pink);
+  }
+
+  .shadow-colorful {
+    box-shadow: var(--shadow-colorful);
+  }
+
+  .text-glow-green {
+    text-shadow: 0 0 10px hsl(120 100% 50% / 0.6), 0 0 30px hsl(120 100% 50% / 0.3);
+  }
+
+  .text-glow-pink {
+    text-shadow: 0 0 10px hsl(320 100% 60% / 0.6), 0 0 30px hsl(320 100% 60% / 0.3);
+  }
+
+  .parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    .parallax-section {
+      background-attachment: scroll;
+    }
+  }
+
+  @keyframes pulse-logo {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px transparent); }
+    50% { transform: scale(1.05); filter: drop-shadow(0 0 20px hsl(45 100% 55% / 0.5)); }
+  }
+
+  .animate-pulse-logo {
+    animation: pulse-logo 2s ease-in-out infinite;
+  }
+
+  @keyframes splatter-in {
+    0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  }
+
+  .animate-splatter {
+    animation: splatter-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
   }
 }
