@@ -64,7 +64,7 @@ const PricingSection = () => {
                     </td>
                   ))}
                   {row.fluo.map((price, j) => (
-                    <td key={`f${j}`} className="p-4 text-center font-medium text-pricing-orange">
+                    <td key={`f${j}`} className="p-4 text-center font-medium text-neon-pink">
                       {price}
                     </td>
                   ))}
