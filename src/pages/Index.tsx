@@ -25,8 +25,8 @@ const Index = () => {
           overlay="neon"
         />
         <PricingSection />
-        <TestimonialsSection />
         <BookingWidget />
+        <TestimonialsSection />
         <FAQSection />
         <ContactSection />
       </main>

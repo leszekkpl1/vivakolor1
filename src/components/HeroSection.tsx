@@ -17,7 +17,7 @@ const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 parallax-ken-burns"
-        style={{ backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 14%' }}
+        style={{ backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 40%' }}
       >
         <div className="absolute inset-0 bg-foreground/60" />
       </div>
@@ -30,7 +30,7 @@ const HeroSection = () => {
           className="max-w-3xl"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black leading-tight text-primary-foreground mb-6">
-            Studio malowania Gdańsk |{" "}
+            Studio malowania Gdańsk{" "}
             <span className="text-gradient-rainbow bg-clip-text">Viva Kolor</span>
             {" "}– Sesje klasyczne i FLUO
           </h1>
@@ -38,7 +38,10 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
             Jedyne takie studio kreatywnego malowania w Gdańsku. Masz dość „nie dotykaj",
             „nie brudź", „uważaj"? U nas obowiązuje tylko jedna zasada:{" "}
-            <strong className="text-secondary">MALUJ JAK CHCESZ. GDZIE CHCESZ. CZYM CHCESZ.</strong>
+            <strong className="text-secondary">
+              <span className="hidden md:inline">MALUJ JAK CHCESZ. GDZIE CHCESZ. CZYM CHCESZ.</span>
+              <span className="md:hidden">MALUJ JAK CHCESZ. GDZIE CHCESZ.<br />CZYM CHCESZ.</span>
+            </strong>
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">

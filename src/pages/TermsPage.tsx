@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -89,6 +90,15 @@ const TermsPage = () => {
             <li>Studio zastrzega sobie prawo do zmiany Regulaminu z ważnych przyczyn prawnych lub organizacyjnych.</li>
             <li>Aktualna wersja Regulaminu publikowana jest w siedzibie Studia oraz w systemie rezerwacyjnym.</li>
           </ol>
+
+          <div className="mt-12 text-center not-prose">
+            <Link
+              to="/"
+              className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-rainbow font-bold text-primary-foreground shadow-colorful hover:scale-105 transition-transform"
+            >
+              Powrót do strony głównej
+            </Link>
+          </div>
         </article>
       </main>
       <Footer />

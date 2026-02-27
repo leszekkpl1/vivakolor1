@@ -111,11 +111,12 @@ const OffersSection = () => {
                 viewport={{ once: true }}
                 className="text-2xl md:text-4xl font-display font-black text-primary-foreground mb-4"
               >
-                Urodziny dla dzieci w Gdańsku i okolic
+                Urodziny dla dzieci w Gdańsku oraz okolic
               </motion.h3>
               <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-                Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?
-                To idealna alternatywa dla sal zabaw. Czas trwania: 120 minut. Salka urodzinowa na wyłączność.
+                Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?<br className="hidden md:inline" />
+                To idealna alternatywa dla sal zabaw. Czas trwania: 120 minut.<br className="hidden md:inline" />
+                Salka urodzinowa na wyłączność.
               </p>
             </div>
           </div>
@@ -150,11 +151,11 @@ const OffersSection = () => {
               <li className="flex gap-2"><span className="text-primary">•</span> Zapewniamy zastawę, szklane dzbanki, nóż do tortu</li>
             </ul>
             <a
-              href="#kontakt"
-              onClick={(e) => { e.preventDefault(); document.querySelector("#kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
+              href="#rezerwacja"
+              onClick={(e) => { e.preventDefault(); document.querySelector("#rezerwacja")?.scrollIntoView({ behavior: "smooth" }); }}
               className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-rainbow font-bold text-primary-foreground shadow-colorful hover:scale-105 transition-transform"
             >
-              Skontaktuj się i zarezerwuj termin
+              Zarezerwuj termin
             </a>
           </div>
         </div>
@@ -173,10 +174,12 @@ const OffersSection = () => {
                 viewport={{ once: true }}
                 className="text-2xl md:text-4xl font-display font-black text-primary-foreground mb-4"
               >
-                Sesje dla grup przedszkolnych i szkolnych w Gdańsku i okolic
+                <span className="hidden md:inline">Sesje dla grup przedszkolnych i szkolnych w Gdańsku oraz okolic</span>
+                <span className="md:hidden">Sesje dla grup przedszkolnych<br />i szkolnych w Gdańsku<br />oraz okolic</span>
               </motion.h3>
               <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-                Warsztaty plastyczne i zajęcia kreatywne dla dzieci. Studio pomieści ok. 50 osób w trzech salach.
+                Warsztaty plastyczne i zajęcia kreatywne dla dzieci.<br className="hidden md:inline" />
+                Studio pomieści ok. 50 osób w trzech salach.
               </p>
             </div>
           </div>
@@ -206,7 +209,7 @@ const OffersSection = () => {
           <div className="bg-card rounded-xl p-6 max-w-2xl mx-auto border border-border">
             <h5 className="text-xl font-display font-bold mb-4 text-foreground">Koszt i rezerwacja</h5>
             <p className="text-foreground mb-6">
-              Koszt ok. 65 zł/os (ustalany indywidualnie w zależności od grupy).
+              Koszt ok. 65 zł/os (ustalany indywidualnie w zależności od grupy).<br className="hidden md:inline" />
               Zadzwoń lub napisz, aby ustalić termin i wycenę.
             </p>
             <a

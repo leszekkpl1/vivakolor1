@@ -58,6 +58,11 @@ export default {
           blue: "hsl(var(--neon-blue))",
           orange: "hsl(var(--neon-orange))",
         },
+        pricing: {
+          green: "hsl(var(--pricing-green))",
+          blue: "hsl(var(--pricing-blue))",
+          orange: "hsl(var(--pricing-orange))",
+        },
         fluo: {
           bg: "hsl(var(--fluo-bg))",
           surface: "hsl(var(--fluo-surface))",
