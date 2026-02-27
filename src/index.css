@@ -173,12 +173,31 @@
     animation: ken-burns-pan 30s linear infinite alternate;
   }
 
-  @supports (-webkit-touch-callout: none) {
+  /* Fix for mobile browsers - disable fixed attachment to prevent jitter */
+  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
     .parallax-section {
       background-attachment: scroll;
+      background-size: cover;
+      background-position: center center;
     }
     .parallax-ken-burns {
       background-attachment: scroll;
+      background-size: cover;
+      background-position: center center;
+      animation: none;
+    }
+  }
+
+  /* iOS Safari specific fix */
+  @supports (-webkit-touch-callout: none) {
+    .parallax-section {
+      background-attachment: scroll;
+      background-size: cover;
+    }
+    .parallax-ken-burns {
+      background-attachment: scroll;
+      background-size: cover;
+      animation: none;
     }
   }
 
