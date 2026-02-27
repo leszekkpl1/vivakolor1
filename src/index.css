@@ -173,19 +173,39 @@
     animation: ken-burns-pan 30s linear infinite alternate;
   }
 
-  /* Fix for mobile browsers - disable fixed attachment to prevent jitter */
+  /* Mobile Chromium: keep fixed+pan effect, but reduce jitter with compositor + scroll-aware animation */
   @media (max-width: 768px), (hover: none) and (pointer: coarse) {
     .parallax-section {
-      background-attachment: scroll;
+      background-attachment: fixed;
       background-size: cover;
       background-position: center center;
+      will-change: background-position;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
     }
+
     .parallax-ken-burns {
-      background-attachment: scroll;
+      background-attachment: fixed;
       background-size: cover;
       background-position: center center;
-      animation: none;
+      animation: ken-burns-pan-mobile 48s linear infinite alternate;
+      will-change: background-position;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
     }
+
+    html.is-scrolling .parallax-ken-burns {
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes ken-burns-pan-mobile {
+    0% { background-position: 8% center; }
+    100% { background-position: 92% center; }
   }
 
   /* iOS Safari specific fix */
