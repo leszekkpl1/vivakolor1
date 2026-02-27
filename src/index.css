@@ -166,15 +166,37 @@
     background-size: cover;
   }
 
+  .parallax-ken-burns {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+    animation: ken-burns-pan 30s linear infinite alternate;
+  }
+
   @supports (-webkit-touch-callout: none) {
     .parallax-section {
       background-attachment: scroll;
     }
+    .parallax-ken-burns {
+      background-attachment: scroll;
+    }
+  }
+
+  @keyframes ken-burns-pan {
+    0% { background-position: 0% center; }
+    100% { background-position: 100% center; }
   }
 
   @keyframes pulse-logo {
     0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px transparent); }
-    50% { transform: scale(1.05); filter: drop-shadow(0 0 20px hsl(45 100% 55% / 0.5)); }
+    50% { transform: scale(1.15); filter: drop-shadow(0 0 25px hsl(45 100% 55% / 0.6)); }
+  }
+
+  @media (max-width: 768px) {
+    @keyframes pulse-logo {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px transparent); }
+      50% { transform: scale(1.25); filter: drop-shadow(0 0 30px hsl(45 100% 55% / 0.7)); }
+    }
   }
 
   .animate-pulse-logo {

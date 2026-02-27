@@ -9,11 +9,14 @@ const badges = [
 ];
 
 const HeroSection = () => {
+  const scrollTo = (id: string) => {
+    document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Parallax background */}
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div
-        className="absolute inset-0 parallax-section"
+        className="absolute inset-0 parallax-ken-burns"
         style={{ backgroundImage: `url(${heroImg})` }}
       >
         <div className="absolute inset-0 bg-foreground/60" />
@@ -39,18 +42,18 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
-            <a
-              href="#rezerwacja"
+            <button
+              onClick={() => scrollTo("#rezerwacja")}
               className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-rainbow font-bold text-lg text-primary-foreground shadow-colorful hover:scale-105 transition-transform"
             >
               Zarezerwuj sesję
-            </a>
-            <a
-              href="#oferta"
+            </button>
+            <button
+              onClick={() => scrollTo("#oferta")}
               className="inline-flex items-center px-8 py-4 rounded-full border-2 border-primary-foreground/30 font-bold text-lg text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
             >
               Sprawdź ofertę
-            </a>
+            </button>
           </div>
 
           <div className="flex flex-wrap gap-4 md:gap-6">
@@ -60,7 +63,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4 + i * 0.15, type: "spring" }}
-                className="flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 border border-primary-foreground/20"
+                className="flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 border border-primary-foreground/20 hover:scale-110 transition-transform"
               >
                 <badge.icon size={20} className="text-secondary" />
                 <span className="text-sm font-medium text-primary-foreground">{badge.text}</span>

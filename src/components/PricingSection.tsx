@@ -30,8 +30,8 @@ const PricingSection = () => {
                   Bilet
                 </th>
                 <th colSpan={2} className="p-4 font-display font-bold text-center border-b border-border">
-                  <span className="inline-flex items-center gap-2 bg-gradient-rainbow bg-clip-text text-transparent">
-                    🌈 Sesja Klasyczna
+                  <span className="inline-flex items-center gap-2">
+                    🌈 <span className="text-gradient-rainbow">Sesja Klasyczna</span>
                   </span>
                 </th>
                 <th colSpan={2} className="p-4 font-display font-bold text-center border-b border-border">
@@ -74,6 +74,10 @@ const PricingSection = () => {
             </tbody>
           </table>
         </div>
+
+        <p className="md:hidden text-xs text-muted-foreground text-center mt-3 italic">
+          👉 Przesuń w prawo aby zobaczyć pełny cennik
+        </p>
 
         <div className="mt-8 bg-muted rounded-xl p-6 space-y-2 text-sm text-muted-foreground">
           <p>👶 Dzieci poniżej 12 lat z opiekunem (opiekun: 10 zł). Max 2 osoby przy jednym stanowisku.</p>

@@ -1,13 +1,16 @@
-import { Link } from "react-router-dom";
 import logo from "@/assets/logo-viva-kolor.webp";
 
 const Footer = () => {
+  const scrollTo = (id: string) => {
+    document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           <div>
-            <img src={logo} alt="Viva Kolor" className="h-16 w-auto mb-4" loading="lazy" />
+            <img src={logo} alt="Viva Kolor" className="h-24 w-auto mb-4" loading="lazy" />
             <p className="text-sm text-primary-foreground/70">
               Studio kreatywnego malowania w Gdańsku. Sesje klasyczne i FLUO.
             </p>
@@ -16,18 +19,18 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-bold text-sm uppercase tracking-wider mb-4">Oferta</h3>
             <nav className="space-y-2 text-sm text-primary-foreground/70">
-              <Link to="/#oferta" className="block hover:text-primary-foreground transition-colors">Sesje malowania</Link>
-              <Link to="/urodziny" className="block hover:text-primary-foreground transition-colors">Urodziny dla dzieci</Link>
-              <Link to="/grupy" className="block hover:text-primary-foreground transition-colors">Grupy zorganizowane</Link>
+              <button onClick={() => scrollTo("#oferta")} className="block hover:text-primary-foreground transition-colors text-left">Sesje malowania</button>
+              <button onClick={() => scrollTo("#urodziny")} className="block hover:text-primary-foreground transition-colors text-left">Urodziny dla dzieci</button>
+              <button onClick={() => scrollTo("#grupy")} className="block hover:text-primary-foreground transition-colors text-left">Grupy zorganizowane</button>
             </nav>
           </div>
 
           <div>
             <h3 className="font-display font-bold text-sm uppercase tracking-wider mb-4">Informacje</h3>
             <nav className="space-y-2 text-sm text-primary-foreground/70">
-              <Link to="/regulamin" className="block hover:text-primary-foreground transition-colors">Regulamin</Link>
-              <Link to="/polityka-prywatnosci" className="block hover:text-primary-foreground transition-colors">Polityka Prywatności</Link>
-              <Link to="/kontakt" className="block hover:text-primary-foreground transition-colors">Kontakt</Link>
+              <a href="/regulamin" className="block hover:text-primary-foreground transition-colors">Regulamin</a>
+              <a href="/polityka-prywatnosci" className="block hover:text-primary-foreground transition-colors">Polityka Prywatności</a>
+              <button onClick={() => scrollTo("#kontakt")} className="block hover:text-primary-foreground transition-colors text-left">Kontakt</button>
             </nav>
           </div>
 
