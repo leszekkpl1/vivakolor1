@@ -7,20 +7,60 @@ import {
 
 const faqs = [
   {
+    q: "Jak wygląda proces płatności?",
+    a: "Szczegóły dotyczące płatności przekazujemy podczas rezerwacji – możliwa jest płatność przelewem lub na miejscu.",
+  },
+  {
+    q: "Czy można przełożyć zarezerwowany termin?",
+    a: "Tak, zmiana terminu jest możliwa po wcześniejszym kontakcie z nami i w zależności od dostępności miejsc.",
+  },
+  {
     q: "Czy trzeba mieć talent plastyczny?",
-    a: "Nie, liczy się zabawa i kreatywność. Nie musisz umieć malować – u nas każdy jest artystą!",
+    a: "Nie. Nasze studio jest otwarte dla każdego – bez względu na doświadczenie czy umiejętności. Liczy się zabawa i kreatywność.",
   },
   {
-    q: "Czy farby pozostają na ubraniach?",
-    a: "Farby są spieralne, dajemy poncha i ochraniacze, ale zalecamy założyć gorsze ubranie na wszelki wypadek.",
+    q: "Czy farby pozostają na ubraniach lub skórze?",
+    a: "Korzystamy z farb łatwo zmywalnych i spieralnych. Uczestnicy otrzymują jednorazowe poncha oraz ochraniacze na obuwie. Mimo to rekomendujemy założenie ubrania, którego ewentualne zabrudzenie nie będzie problemem.",
   },
   {
-    q: "Od jakiego wieku można uczestniczyć?",
-    a: "Od 3 lat. Dzieci poniżej 12 lat przebywają z opiekunem na sali.",
+    q: "Czy można zorganizować wydarzenie zamknięte?",
+    a: "Oczywiście. Organizujemy m.in. urodziny, wieczory panieńskie, integracje firmowe oraz wydarzenia prywatne.",
   },
   {
-    q: "Co z obrazem po sesji?",
-    a: "Zabierasz do domu w zabezpieczonym, tekturowym opakowaniu. To Twoje dzieło!",
+    q: "Jak dokonać rezerwacji?",
+    a: "Termin można zarezerwować przez formularz online lub telefonicznie.",
+  },
+  {
+    q: "Czy mogę przyjść bez wcześniejszej rezerwacji?",
+    a: "Każda sesja ma ograniczoną liczbę miejsc. Rezerwacja gwarantuje udział. Zakup biletu na miejscu jest możliwy wyłącznie przy dostępnych wolnych miejscach.",
+  },
+  {
+    q: "Od jakiego wieku można wziąć udział w zajęciach?",
+    a: "Zapraszamy dzieci od 3. roku życia. Uczestnicy poniżej 12 lat muszą przebywać na sali pod opieką osoby dorosłej (10 zł).",
+  },
+  {
+    q: "Co obejmuje bilet wstępu?",
+    a: "Każdy bilet wstępu zawiera: płótno + karton na obraz, zestaw 5 wybranych kolorów farb, odzież ochronną, ochraniacze na buty, narzędzia malarskie i 60 minut świetnej zabawy.",
+  },
+  {
+    q: "Jakie farby są używane podczas zajęć?",
+    a: "Pracujemy na bezpiecznych, wysokiej jakości farbach plakatowych. Są nietoksyczne, wodorozcieńczalne, posiadają certyfikat CE oraz aktualne badania bezpieczeństwa zgodne z obowiązującymi normami.",
+  },
+  {
+    q: "Czy obowiązują jakieś zasady?",
+    a: "Tak – obowiązują podstawowe zasady bezpieczeństwa i wzajemnego szacunku (np. zakaz biegania czy celowego chlapania na prace innych osób). Dzięki temu każdy może komfortowo uczestniczyć w zabawie.",
+  },
+  {
+    q: "Czy podczas zajęć obecni są animatorzy opiekujący się dziećmi?",
+    a: "Nie. Dzieci przez cały czas trwania sesji pozostają pod opieką swoich opiekunów.",
+  },
+  {
+    q: "Czy można robić zdjęcia i nagrywać filmy?",
+    a: "Tak – zachęcamy do dokumentowania swojej zabawy. Będzie nam miło, jeśli oznaczycie nasze studio w mediach społecznościowych.",
+  },
+  {
+    q: "Co dzieje się z obrazem po zakończeniu sesji?",
+    a: "Gotową pracę zabieracie ze sobą do domu w zabezpieczonym, tekturowym opakowaniu.",
   },
 ];
 

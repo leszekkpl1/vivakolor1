@@ -8,7 +8,7 @@ interface ParallaxDividerProps {
 const ParallaxDivider = ({ image, alt, height = "h-64 md:h-96", overlay = "dark" }: ParallaxDividerProps) => {
   return (
     <div
-      className={`relative ${height} parallax-section`}
+      className={`relative ${height} parallax-ken-burns`}
       style={{ backgroundImage: `url(${image})` }}
       role="img"
       aria-label={alt}

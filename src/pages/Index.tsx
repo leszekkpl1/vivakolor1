@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import OffersSection from "@/components/OffersSection";
 import ParallaxDivider from "@/components/ParallaxDivider";
 import PricingSection from "@/components/PricingSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import BookingWidget from "@/components/BookingWidget";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -24,6 +25,7 @@ const Index = () => {
           overlay="neon"
         />
         <PricingSection />
+        <TestimonialsSection />
         <BookingWidget />
         <FAQSection />
         <ContactSection />

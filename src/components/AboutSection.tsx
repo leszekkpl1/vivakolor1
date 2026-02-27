@@ -54,7 +54,7 @@ const AboutSection = () => {
               <img
                 src={groupImg}
                 alt="Grupa przyjaciół malująca w studio Viva Kolor w Gdańsku"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
@@ -74,9 +74,9 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="flex flex-col items-center text-center"
+                className="flex flex-col items-center text-center hover:scale-110 transition-transform duration-300"
               >
-                <div className="w-16 h-16 rounded-full bg-gradient-rainbow flex items-center justify-center mb-3 shadow-colorful">
+                <div className="w-16 h-16 rounded-full bg-gradient-rainbow flex items-center justify-center mb-3 shadow-colorful hover:scale-110 transition-transform">
                   <step.icon size={28} className="text-primary-foreground" />
                 </div>
                 <span className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
