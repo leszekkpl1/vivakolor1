@@ -1,7 +1,15 @@
+import { useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo-viva-kolor.webp";
 
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const scrollTo = (id: string) => {
+    if (location.pathname !== "/") {
+      navigate("/" + id);
+      return;
+    }
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -12,7 +20,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="Viva Kolor" className="h-24 w-auto mb-4" loading="lazy" />
             <p className="text-sm text-primary-foreground/70">
-              Studio kreatywnego malowania w Gdańsku. Sesje klasyczne i FLUO.
+              Studio kreatywnego malowania w Gdańsku.<br className="md:hidden" /> Sesje klasyczne i FLUO.
             </p>
           </div>
 

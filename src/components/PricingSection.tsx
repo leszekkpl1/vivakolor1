@@ -26,8 +26,8 @@ const PricingSection = () => {
           <table className="w-full min-w-[640px] border-collapse">
             <thead>
               <tr>
-                <th className="text-left p-4 font-display font-bold text-foreground border-b border-border">
-                  Bilet
+                <th rowSpan={2} className="p-3 text-left border-b border-border align-bottom text-pricing-green font-bold text-sm">
+                  Bilet \ <span className="text-pricing-blue">Dni tygodnia</span>
                 </th>
                 <th colSpan={2} className="p-4 font-display font-bold text-center border-b border-border">
                   <span className="inline-flex items-center gap-2">
@@ -40,12 +40,11 @@ const PricingSection = () => {
                   </span>
                 </th>
               </tr>
-              <tr className="text-sm text-muted-foreground">
-                <th className="p-3 text-left border-b border-border" />
-                <th className="p-3 border-b border-border">Pon-Czw</th>
-                <th className="p-3 border-b border-border">Pt-Ndz</th>
-                <th className="p-3 border-b border-border">Pon-Czw</th>
-                <th className="p-3 border-b border-border">Pt-Ndz</th>
+              <tr className="text-sm">
+                <th className="p-3 border-b border-border text-pricing-blue">Pon-Czw</th>
+                <th className="p-3 border-b border-border text-pricing-blue">Pt-Ndz</th>
+                <th className="p-3 border-b border-border text-pricing-blue">Pon-Czw</th>
+                <th className="p-3 border-b border-border text-pricing-blue">Pt-Ndz</th>
               </tr>
             </thead>
             <tbody>
@@ -58,14 +57,14 @@ const PricingSection = () => {
                   transition={{ delay: i * 0.05 }}
                   className="border-b border-border hover:bg-muted/50 transition-colors"
                 >
-                  <td className="p-4 font-semibold text-foreground">{row.type}</td>
+                  <td className="p-4 font-semibold text-pricing-green">{row.type}</td>
                   {row.classic.map((price, j) => (
-                    <td key={`c${j}`} className="p-4 text-center font-medium text-foreground">
+                    <td key={`c${j}`} className="p-4 text-center font-medium text-pricing-orange">
                       {price}
                     </td>
                   ))}
                   {row.fluo.map((price, j) => (
-                    <td key={`f${j}`} className="p-4 text-center font-medium text-neon-pink">
+                    <td key={`f${j}`} className="p-4 text-center font-medium text-pricing-orange">
                       {price}
                     </td>
                   ))}
@@ -81,7 +80,7 @@ const PricingSection = () => {
 
         <div className="mt-8 bg-muted rounded-xl p-6 space-y-2 text-sm text-muted-foreground">
           <p>👶 Dzieci poniżej 12 lat z opiekunem (opiekun: 10 zł). Max 2 osoby przy jednym stanowisku.</p>
-          <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5 zł / fluo 7 zł, dodatkowe płótna 35 zł / 100 zł, strój ochronny 10 zł.</p>
+          <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5 zł /<br className="md:hidden" /> fluo 7 zł, dodatkowe płótna 35 zł / 100 zł, strój ochronny 10 zł.</p>
           <p><strong>Bilet zawiera:</strong> płótno, farby, odzież ochronną, karton do transportu.</p>
         </div>
       </div>

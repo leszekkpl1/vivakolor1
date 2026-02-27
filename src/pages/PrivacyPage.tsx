@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -61,6 +62,15 @@ const PrivacyPage = () => {
 
           <h2>8. Zmiany polityki prywatności</h2>
           <p>Polityka prywatności może być aktualizowana. Aktualna wersja zawsze znajduje się na niniejszej stronie internetowej. Zmiany wchodzą w życie z dniem publikacji nowej wersji. Niniejsza polityka prywatności obowiązuje od dnia 01.03.2026r.</p>
+
+          <div className="mt-12 text-center not-prose">
+            <Link
+              to="/"
+              className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-rainbow font-bold text-primary-foreground shadow-colorful hover:scale-105 transition-transform"
+            >
+              Powrót do strony głównej
+            </Link>
+          </div>
         </article>
       </main>
       <Footer />

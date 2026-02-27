@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo-viva-kolor.webp";
 
 const navLinks = [
@@ -14,9 +15,15 @@ const navLinks = [
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const scrollTo = (href: string) => {
     setIsOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/" + href);
+      return;
+    }
     const el = document.querySelector(href);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
@@ -27,8 +34,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <a
-          href="#hero"
-          onClick={(e) => { e.preventDefault(); scrollTo("#hero"); }}
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            if (location.pathname !== "/") {
+              navigate("/");
+            } else {
+              document.querySelector("#hero")?.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
           className="flex items-center gap-2"
         >
           <img
