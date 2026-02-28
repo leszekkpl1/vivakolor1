@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import { Rainbow, Sparkles, Wind, Paintbrush, Cake, Gift, Users, Brain, Heart, Hand } from "lucide-react";
-import kidsPaintImg from "@/assets/kids-painting.webp";
-import artistFluoImg from "@/assets/artist-fluo.webp";
-import familyImg from "@/assets/family-painting.webp";
 
 const offers = [
   {
@@ -10,8 +7,9 @@ const offers = [
     title: "Sesja Klasyczna",
     subtitle: "DZIKA STREFA KOLORU",
     description: "Malowanie na ścianach, płótnie, podłodze i na sobie. Czysta ekspresja.",
-    image: kidsPaintImg,
-    alt: "Dzieci malujące farbami w sesji klasycznej studio Viva Kolor Gdańsk",
+    image: "/images/warsztaty-plastyczne-gdansk-sesja-klasyczna-rodzinna.webp",
+    alt: "Rodzinne warsztaty plastyczne w Gdańsku, swobodne malowanie abstrakcyjnych wzorów na ścianach w splatter room",
+    title_attr: "Sesja klasyczna w studio malowania",
     dark: false,
   },
   {
@@ -19,8 +17,9 @@ const offers = [
     title: "Sesja FLUO",
     subtitle: "EFEKT WOW",
     description: "Farby świecące w świetle UV. Zobacz, jak Twoje dzieło zaczyna żyć w ciemności. Idealne na urodziny i wieczory panieńskie.",
-    image: artistFluoImg,
-    alt: "Artystka malująca fluorescencyjnymi farbami pod UV w studio Viva Kolor",
+    image: "/images/malowanie-farbami-uv-fluo-gdynia-sopot.webp",
+    alt: "Kobieta malująca świecące kwiaty farbami UV podczas sesji fluo w studio kreatywnym blisko Sopotu i Gdyni",
+    title_attr: "Malowanie w świetle UV - Atrakcje Pomorskie",
     dark: true,
   },
   {
@@ -28,8 +27,9 @@ const offers = [
     title: "Bujamy się i malujemy",
     subtitle: "TOTALNA ZABAWA",
     description: "Huśtawki, dynamiczne chlapanie, totalna zabawa kolorem.",
-    image: familyImg,
-    alt: "Rodzina malująca razem w studio kreatywnym Viva Kolor Gdańsk",
+    image: "/images/atrakcje-dla-dzieci-gdansk-malowanie-na-hustawkach.webp",
+    alt: "Dzieci malujące na huśtawkach w świetle neonowym, unikalna atrakcja edukacyjna dla najmłodszych w Gdańsku i Redzie",
+    title_attr: "Zabawa farbami na huśtawce - Viva Kolor",
     dark: false,
   },
 ];
@@ -75,6 +75,7 @@ const OffersSection = () => {
                 <img
                   src={offer.image}
                   alt={offer.alt}
+                  title={offer.title_attr}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -101,7 +102,7 @@ const OffersSection = () => {
         <div id="urodziny" className="mb-20">
           <div
             className="relative py-16 md:py-24 rounded-2xl overflow-hidden mb-12 parallax-ken-burns"
-            style={{ backgroundImage: `url(${kidsPaintImg})` }}
+            style={{ backgroundImage: `url(/images/kreatywne-urodziny-dla-dzieci-gdansk-splatter-room.webp)` }}
           >
             <div className="absolute inset-0 bg-foreground/60" />
             <div className="relative z-10 text-center px-4">
@@ -111,7 +112,7 @@ const OffersSection = () => {
                 viewport={{ once: true }}
                 className="text-2xl md:text-4xl font-display font-black text-primary-foreground mb-4"
               >
-                Urodziny dla dzieci w Gdańsku oraz okolic
+                Urodziny dla dzieci w Gdańsku
               </motion.h3>
               <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
                 Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?<br className="hidden md:inline" />
@@ -164,7 +165,7 @@ const OffersSection = () => {
         <div id="grupy">
           <div
             className="relative py-16 md:py-24 rounded-2xl overflow-hidden mb-12 parallax-ken-burns"
-            style={{ backgroundImage: `url(${familyImg})` }}
+            style={{ backgroundImage: `url(/images/wycieczki-szkolne-przedszkolne-warsztaty-gdansk-rumia.webp)` }}
           >
             <div className="absolute inset-0 bg-foreground/60" />
             <div className="relative z-10 text-center px-4">
@@ -174,8 +175,8 @@ const OffersSection = () => {
                 viewport={{ once: true }}
                 className="text-2xl md:text-4xl font-display font-black text-primary-foreground mb-4"
               >
-                <span className="hidden md:inline">Sesje dla grup przedszkolnych i szkolnych w Gdańsku oraz okolic</span>
-                <span className="md:hidden">Sesje dla grup przedszkolnych<br />i szkolnych w Gdańsku<br />oraz okolic</span>
+                <span className="hidden md:inline">Sesje dla grup przedszkolnych i szkolnych w Gdańsku</span>
+                <span className="md:hidden">Sesje dla grup przedszkolnych<br />i szkolnych w Gdańsku</span>
               </motion.h3>
               <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
                 Warsztaty plastyczne i zajęcia kreatywne dla dzieci.<br className="hidden md:inline" />

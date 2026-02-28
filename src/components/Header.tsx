@@ -50,6 +50,12 @@ const Header = () => {
             alt="Viva Kolor - Studio Malowania Gdańsk"
             className="h-12 md:h-16 w-auto animate-pulse-logo"
           />
+          <span
+            className="text-gradient-rainbow bg-clip-text text-lg md:text-xl font-bold"
+            style={{ fontFamily: "'Nosifer', cursive" }}
+          >
+            VIVA KOLOR
+          </span>
         </a>
 
         <nav className="hidden md:flex items-center gap-6" aria-label="Nawigacja główna">
@@ -58,14 +64,14 @@ const Header = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-              className={`font-medium text-sm transition-colors hover:opacity-70 ${link.color}`}
+              className={`font-medium text-sm transition-all hover:opacity-70 nav-link-neon ${link.color}`}
             >
               {link.label}
             </a>
           ))}
           <a
             href="tel:+48507125652"
-            className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+            className="flex items-center gap-1.5 text-sm font-medium text-primary nav-link-neon hover:text-primary/80 transition-all"
           >
             <Phone size={16} />
             <span className="hidden lg:inline">507 125 652</span>
@@ -96,6 +102,12 @@ const Header = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <nav className="flex flex-col items-center gap-5 py-8" aria-label="Menu mobilne">
+              <span
+                className="text-gradient-rainbow bg-clip-text text-2xl font-bold mb-2"
+                style={{ fontFamily: "'Nosifer', cursive" }}
+              >
+                VIVA KOLOR
+              </span>
               {navLinks.map((link) => (
                 <a
                   key={link.href}

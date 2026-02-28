@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import bgImg from "@/assets/malowanie-fluorescencyjne-gdansk.webp";
 
 const testimonials = [
   {
@@ -71,7 +70,7 @@ const TestimonialsSection = () => {
       {/* Neon paint splatter background */}
       <div
         className="absolute inset-0 parallax-ken-burns"
-        style={{ backgroundImage: `url(${bgImg})` }}
+        style={{ backgroundImage: `url(/images/swobodne-malowanie-farby-neonowe-viva-kolor.webp)` }}
       />
       <div className="absolute inset-0 bg-foreground/70" />
 
