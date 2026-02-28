@@ -102,12 +102,6 @@ const Header = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <nav className="flex flex-col items-center gap-5 py-8" aria-label="Menu mobilne">
-              <span
-                className="text-gradient-rainbow bg-clip-text text-2xl font-bold mb-2"
-                style={{ fontFamily: "'Nosifer', cursive" }}
-              >
-                VIVA KOLOR
-              </span>
               {navLinks.map((link) => (
                 <a
                   key={link.href}

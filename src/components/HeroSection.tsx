@@ -35,10 +35,12 @@ const HeroSection = () => {
               {" "}Sesje klasyczne{" "}
               <span className="md:inline">i FLUO</span>
             </span>
-            <span className="md:hidden">
-              Studio malowania Gdańsk{" "}
+            <span className="md:hidden flex flex-col">
+              <span>Studio malowania</span>
+              <span>Gdańsk</span>
               <span className="text-gradient-rainbow bg-clip-text" style={{ fontFamily: "'Nosifer', cursive" }}>VIVA KOLOR</span>
-              {" "}Sesje klasyczne<br />i FLUO
+              <span>Sesje klasyczne</span>
+              <span>i FLUO</span>
             </span>
           </h1>
 
