@@ -9,7 +9,7 @@ import BookingWidget from "@/components/BookingWidget";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import artistNeonImg from "@/assets/artist-neon.webp";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
@@ -20,8 +20,9 @@ const Index = () => {
         <AboutSection />
         <OffersSection />
         <ParallaxDivider
-          image={artistNeonImg}
-          alt="Artysta malujący neonowymi farbami w ciemnym studio – sesja FLUO w Viva Kolor Gdańsk"
+          image="/images/cennik-biletow-studio-malowania-gdansk-neon.webp"
+          alt="Mężczyzna malujący ścianę neonową farbą za pomocą wałka w trójmiejskim splatter roomie Viva Kolor"
+          title="Cennik biletów - Studio malowania"
           overlay="neon"
         />
         <PricingSection />
@@ -31,6 +32,7 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

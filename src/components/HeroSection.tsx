@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Palette, Brush, Lightbulb } from "lucide-react";
-import heroImg from "@/assets/hero-party.webp";
 
 const badges = [
   { icon: Palette, text: "Nie musisz umieć malować" },
@@ -17,7 +16,7 @@ const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 parallax-ken-burns"
-        style={{ backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 40%' }}
+        style={{ backgroundImage: `url(/images/studio-malowania-gdansk-viva-kolor-kreatywne-urodziny.webp)`, backgroundPosition: 'center 30%' }}
       >
         <div className="absolute inset-0 bg-foreground/60" />
       </div>
@@ -30,26 +29,40 @@ const HeroSection = () => {
           className="max-w-3xl"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black leading-tight text-primary-foreground mb-6">
-            Studio malowania Gdańsk{" "}
-            <span className="text-gradient-rainbow bg-clip-text">Viva Kolor</span>
-            {" "}– Sesje klasyczne i FLUO
+            <span className="hidden md:inline">
+              Studio malowania Gdańsk{" "}
+              <span className="text-gradient-rainbow bg-clip-text" style={{ fontFamily: "'Nosifer', cursive" }}>VIVA KOLOR</span>
+              {" "}Sesje klasyczne{" "}
+              <span className="md:inline">i FLUO</span>
+            </span>
+            <span className="md:hidden">
+              Studio malowania Gdańsk{" "}
+              <span className="text-gradient-rainbow bg-clip-text" style={{ fontFamily: "'Nosifer', cursive" }}>VIVA KOLOR</span>
+              {" "}Sesje klasyczne<br />i FLUO
+            </span>
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
-            Jedyne takie studio kreatywnego malowania w Gdańsku. Masz dość „nie dotykaj",
-            „nie brudź", „uważaj"? U nas obowiązuje tylko jedna zasada:{" "}
-            <strong>
-              <span className="hidden md:inline">
+            <span className="hidden md:inline">
+              Jedyne takie studio kreatywnego malowania w Gdańsku. Masz dość „nie dotykaj",
+              „nie brudź", „uważaj"? U nas obowiązuje tylko jedna zasada:{" "}
+              <strong>
                 <span className="text-secondary">MALUJ JAK CHCESZ.</span>{" "}
                 <span className="text-green-400">GDZIE CHCESZ.</span>{" "}
                 <span className="text-blue-400">CZYM CHCESZ.</span>
-              </span>
-              <span className="md:hidden flex flex-col">
+              </strong>
+            </span>
+            <span className="md:hidden flex flex-col">
+              <span>Jedyne takie studio kreatywnego</span>
+              <span>malowania w Gdańsku. Masz dość:</span>
+              <span>„nie dotykaj", „nie brudź", „uważaj"?</span>
+              <span>U nas obowiązuje tylko jedna zasada:</span>
+              <strong className="flex flex-col">
                 <span className="text-secondary">MALUJ JAK CHCESZ.</span>
                 <span className="text-green-400">GDZIE CHCESZ.</span>
                 <span className="text-blue-400">CZYM CHCESZ.</span>
-              </span>
-            </strong>
+              </strong>
+            </span>
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">

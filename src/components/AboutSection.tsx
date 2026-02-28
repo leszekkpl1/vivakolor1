@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { CalendarCheck, MapPin, Palette, Sparkles, Home } from "lucide-react";
-import groupImg from "@/assets/group-fun.webp";
 
 const steps = [
   { icon: CalendarCheck, label: "Rezerwujesz termin" },
@@ -52,8 +51,9 @@ const AboutSection = () => {
           >
             <div className="rounded-2xl overflow-hidden shadow-colorful aspect-[4/3]">
               <img
-                src={groupImg}
-                alt="Grupa przyjaciół malująca w studio Viva Kolor w Gdańsku"
+                src="/images/kreatywna-integracja-firmowa-randka-trojmiasto.webp"
+                alt="Dorośli świetnie bawiący się podczas malowania farbami fluo w Gdańsku, idealny pomysł na integrację i randkę w Trójmieście"
+                title="Kreatywna integracja i randki - Trójmiasto"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
