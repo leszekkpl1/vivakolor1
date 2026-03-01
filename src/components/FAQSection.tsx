@@ -66,7 +66,7 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="py-20 md:py-28 bg-background">
+    <section id="faq" className="pt-20 pb-[3.25rem] md:pt-28 md:pb-[4.5rem] bg-background">
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-display font-black text-center mb-12 text-foreground">
           Najczęściej zadawane pytania

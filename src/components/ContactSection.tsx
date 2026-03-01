@@ -2,7 +2,7 @@ import { MapPin, Clock, Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="kontakt" className="py-10 md:py-14 bg-background scroll-mt-24">
+    <section id="kontakt" className="py-10 md:py-14 bg-background scroll-mt-28">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-display font-black text-center mb-12 text-foreground">
           Kontakt
@@ -47,7 +47,7 @@ const ContactSection = () => {
 
           <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.7!2d18.5975!3d54.3805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIyJzQ5LjgiTiAxOMKwMzUnNTEuMCJF!5e0!3m2!1spl!2spl!4v1"
+              src="https://maps.google.com/maps?q=54.377478,18.6056404&z=17&output=embed"
               style={{ border: 0, width: "100%", height: "100%" }}
               allowFullScreen
               loading="lazy"
