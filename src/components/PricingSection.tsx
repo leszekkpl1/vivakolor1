@@ -79,9 +79,14 @@ const PricingSection = () => {
         </p>
 
         <div className="mt-8 bg-muted rounded-xl p-6 space-y-2 text-sm text-muted-foreground">
-          <p>👶 Dzieci poniżej 12 lat z opiekunem (opiekun: 10 zł). Max 2 osoby przy jednym stanowisku.</p>
+          <p>👶 Dzieci poniżej 12 lat z opiekunem (opiekun: 10 zł). Przy jednym stanowisku mogą przebywać maksymalnie 2 osoby wliczając opiekuna.</p>
           <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5 zł /<br className="md:hidden" /> fluo 7 zł, dodatkowe płótna 35 zł / 100 zł, strój ochronny 10 zł.</p>
           <p><strong>Bilet zawiera:</strong> płótno, farby, odzież ochronną, karton do transportu.</p>
+          <p>Minimalny wiek uczestnika to ukończone 3 lata.</p>
+          <p>Bilet ulgowy przysługuje dzieciom i młodzieży uczącej się do 18 roku życia, studentom, osobom z niepełnosprawnością oraz seniorom – za okazaniem ważnego dokumentu potwierdzającego uprawnienia.</p>
+          <p>Jedna osoba dorosła może mieć pod opieką maksymalnie 5 dzieci na sali.</p>
+          <p>Opiekun lub dodatkowa osoba do stanowiska otrzymują również strój ochronny i ochraniacze na buty.</p>
+          <p>Czas trwania sesji to 60 minut. W przypadku urodzin 120 min.</p>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Cal from "@calcom/embed-react";
+
 const BookingWidget = () => {
   return (
     <section id="rezerwacja" className="py-20 md:py-28 bg-muted">
@@ -8,13 +10,12 @@ const BookingWidget = () => {
         <p className="text-center text-muted-foreground mb-10">
           Wybierz termin, który Ci odpowiada i zarezerwuj swoją sesję malowania w Gdańsku.
         </p>
-        <div className="w-full max-w-4xl mx-auto h-[600px] md:h-[700px] rounded-2xl overflow-hidden shadow-xl border border-border bg-card">
-          <iframe
-            src="https://cal.com/TWOJ_USERNAME/TWOJA_SESJA?hideEventTypeDetails=false&layout=month_view"
-            style={{ width: "100%", height: "100%", border: "none" }}
-            title="Zarezerwuj sesję w Viva Kolor"
-            loading="lazy"
-          ></iframe>
+        <div className="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-border bg-card">
+          <Cal
+            calLink="vivakolor"
+            config={{ layout: "month_view" }}
+            style={{ width: "100%", height: "100%", overflow: "visible" }}
+          />
         </div>
       </div>
     </section>
