@@ -7,7 +7,7 @@ const Footer = () => {
 
   const scrollTo = (id: string) => {
     if (location.pathname !== "/") {
-      navigate("/" + id);
+      navigate("/", { state: { scrollTo: id } });
       return;
     }
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
@@ -45,10 +45,10 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-bold text-sm uppercase tracking-wider mb-4">Kontakt</h3>
             <div className="space-y-2 text-sm text-primary-foreground/70">
-              <p>ul. Partyzantów 8/112u</p>
+              <p>ul. Partyzantów 8/112</p>
               <p>80-254 Gdańsk-Wrzeszcz</p>
-              <a href="tel:+48507125652" className="block hover:text-primary-foreground transition-colors">+48 507 125 652</a>
-              <a href="mailto:vivakolor@wp.pl" className="block hover:text-primary-foreground transition-colors">vivakolor@wp.pl</a>
+              <a href="tel:+48533729279" className="block hover:text-primary-foreground transition-colors">+48 533 729 279</a>
+              <a href="mailto:biuro@vivakolor.pl" className="block hover:text-primary-foreground transition-colors">biuro@vivakolor.pl</a>
             </div>
           </div>
         </div>

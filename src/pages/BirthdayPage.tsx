@@ -91,12 +91,13 @@ const BirthdayPage = () => {
               <li className="flex gap-2"><span className="text-primary">•</span> Min. 10 osób, max. 25 osób</li>
               <li className="flex gap-2"><span className="text-primary">•</span> Zapewniamy zastawę, szklane dzbanki, nóż do tortu</li>
             </ul>
-            <Link
-              to="/kontakt"
+            <a
+              href="#kontakt"
+              onClick={(e) => { e.preventDefault(); document.querySelector("#kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
               className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-rainbow font-bold text-primary-foreground shadow-colorful hover:scale-105 transition-transform"
             >
-              Skontaktuj się i zarezerwuj termin
-            </Link>
+              Skontaktuj się z nami
+            </a>
           </div>
         </section>
       </main>

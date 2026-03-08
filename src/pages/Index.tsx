@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -12,6 +14,23 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const state = location.state as { scrollTo?: string } | null;
+    if (state?.scrollTo) {
+      // Small delay to ensure DOM is ready after navigation
+      setTimeout(() => {
+        const el = document.querySelector(state.scrollTo!);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+      // Clear the state so it doesn't re-scroll on re-renders
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
+
   return (
     <>
       <Header />

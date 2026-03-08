@@ -67,7 +67,7 @@ const GroupsPage = () => {
           <div className="container mx-auto px-4 max-w-2xl">
             <h3 className="text-2xl font-display font-bold mb-6 text-foreground">Koszt i rezerwacja</h3>
             <p className="text-foreground mb-6">
-              Koszt ok. 65 zł/os (ustalany indywidualnie w zależności od grupy).
+              Koszt ok. 60 zł/os (ustalany indywidualnie w zależności od grupy).{" "}
               Zadzwoń lub napisz, aby ustalić termin i wycenę.
             </p>
             <Link

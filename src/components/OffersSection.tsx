@@ -152,11 +152,11 @@ const OffersSection = () => {
               <li className="flex gap-2"><span className="text-primary">•</span> Zapewniamy zastawę, szklane dzbanki, nóż do tortu</li>
             </ul>
             <a
-              href="#rezerwacja"
-              onClick={(e) => { e.preventDefault(); document.querySelector("#rezerwacja")?.scrollIntoView({ behavior: "smooth" }); }}
+              href="#kontakt"
+              onClick={(e) => { e.preventDefault(); document.querySelector("#kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
               className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-rainbow font-bold text-primary-foreground shadow-colorful hover:scale-105 transition-transform"
             >
-              Zarezerwuj termin
+              Skontaktuj się z nami
             </a>
           </div>
         </div>
@@ -210,7 +210,8 @@ const OffersSection = () => {
           <div className="bg-card rounded-xl p-6 max-w-2xl mx-auto border border-border">
             <h5 className="text-xl font-display font-bold mb-4 text-foreground">Koszt i rezerwacja</h5>
             <p className="text-foreground mb-6">
-              Koszt ok. 65 zł/os (ustalany indywidualnie w zależności od grupy).<br className="hidden md:inline" />
+              Koszt ok. 60 zł/os (ustalany indywidualnie w zależności od grupy).{" "}
+              <br className="hidden md:inline" />
               Zadzwoń lub napisz, aby ustalić termin i wycenę.
             </p>
             <a

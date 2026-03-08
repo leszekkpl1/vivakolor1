@@ -21,7 +21,7 @@ const Header = () => {
   const scrollTo = (href: string) => {
     setIsOpen(false);
     if (location.pathname !== "/") {
-      navigate("/" + href);
+      navigate("/", { state: { scrollTo: href } });
       return;
     }
     const el = document.querySelector(href);
@@ -70,11 +70,11 @@ const Header = () => {
             </a>
           ))}
           <a
-            href="tel:+48507125652"
+            href="tel:+48533729279"
             className="flex items-center gap-1.5 text-sm font-medium text-primary nav-link-neon hover:text-primary/80 transition-all"
           >
             <Phone size={16} />
-            <span className="hidden lg:inline">507 125 652</span>
+            <span className="hidden lg:inline">533 729 279</span>
           </a>
           <a
             href="#rezerwacja"
@@ -113,16 +113,16 @@ const Header = () => {
                 </a>
               ))}
               <a
-                href="tel:+48507125652"
+                href="tel:+48533729279"
                 className="flex items-center gap-2 text-lg font-medium text-neon-green"
               >
-                <Phone size={20} /> 507 125 652
+                <Phone size={20} /> 533 729 279
               </a>
               <a
-                href="mailto:vivakolor@wp.pl"
+                href="mailto:biuro@vivakolor.pl"
                 className="flex items-center gap-2 text-lg font-medium text-primary-foreground/70"
               >
-                <Mail size={20} /> vivakolor@wp.pl
+                <Mail size={20} /> biuro@vivakolor.pl
               </a>
               <a
                 href="#rezerwacja"

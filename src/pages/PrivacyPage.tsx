@@ -13,19 +13,19 @@ const PrivacyPage = () => {
           </h1>
 
           <p>Niniejsza polityka prywatności i plików cookies opisuje zasady postępowania z danymi osobowymi oraz wykorzystywania plików cookies i innych technologii w ramach strony internetowej www.vivakolor.pl.</p>
-          <p>Administratorem strony jest VIVA Kolor Anna Rybaczek z siedzibą w Gdańsku 80-254, ul. Partyzantów 8/112u, NIP: 6040018127.</p>
-          <p>Kontakt z administratorem możliwy pod adresem e-mail vivakolor@wp.pl.</p>
+          <p>Administratorem strony jest VIVA Kolor Anna Rybaczek z siedzibą w Gdańsku 80-254, ul. Partyzantów 8/112, NIP: 6040018127.</p>
+          <p>Kontakt z administratorem możliwy pod adresem e-mail biuro@vivakolor.pl.</p>
 
           <h2>1. Definicje</h2>
           <p>Na potrzeby niniejszej polityki prywatności, przyjmuje się następujące znaczenie poniższych pojęć:</p>
           <ul className="list-disc pl-6 space-y-1">
-            <li><strong>Administrator</strong> – VIVA Kolor Anna Rybaczek z siedzibą w Gdańsku 80-254, ul. Partyzantów 8/112u, NIP: 6040018127.</li>
+            <li><strong>Administrator</strong> – VIVA Kolor Anna Rybaczek z siedzibą w Gdańsku 80-254, ul. Partyzantów 8/112, NIP: 6040018127.</li>
             <li><strong>Serwis</strong> – strona internetowa dostępna pod adresem www.vivakolor.pl.</li>
             <li><strong>Użytkownik</strong> – każdy podmiot, który korzysta ze Strony.</li>
           </ul>
 
           <h2>2. Dane osobowe</h2>
-          <p>Administratorem danych osobowych w rozumieniu przepisów o ochronie danych osobowych jest VIVA Kolor Anna Rybaczek z siedzibą w Gdańsku 80-254, ul. Partyzantów 8/112u, NIP: 6040018127.</p>
+          <p>Administratorem danych osobowych w rozumieniu przepisów o ochronie danych osobowych jest VIVA Kolor Anna Rybaczek z siedzibą w Gdańsku 80-254, ul. Partyzantów 8/112, NIP: 6040018127.</p>
           <p>Cele, podstawy prawne oraz okres przetwarzania danych osobowych wskazane są odrębnie w stosunku do każdego celu przetwarzania danych.</p>
           <p>W związku z przetwarzaniem przez nas Twoich danych osobowych, przysługują Ci następujące uprawnienia:</p>
           <ul className="list-disc pl-6 space-y-1">

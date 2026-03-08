@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 const pricingData = [
   { type: "Ulgowy", classic: ["79 zł", "89 zł"], fluo: ["99 zł", "109 zł"] },
   { type: "Normalny", classic: ["99 zł", "109 zł"], fluo: ["109 zł", "119 zł"] },
-  { type: "Normalny + dod. osoba", classic: ["129 zł", "139 zł"], fluo: ["139 zł", "149 zł"] },
-  { type: "Rodzinny 2+2", classic: ["179 zł", "189 zł"], fluo: ["189 zł", "199 zł"] },
 ];
 
 const PricingSection = () => {
@@ -22,7 +20,8 @@ const PricingSection = () => {
           <p className="text-center text-muted-foreground mb-12">Bilety i Rezerwacje</p>
         </motion.div>
 
-        <div className="overflow-x-auto">
+        {/* Desktop table */}
+        <div className="hidden md:block overflow-x-auto">
           <table className="w-full min-w-[640px] border-collapse">
             <thead>
               <tr>
@@ -74,19 +73,60 @@ const PricingSection = () => {
           </table>
         </div>
 
-        <p className="md:hidden text-xs text-muted-foreground text-center mt-3 italic">
-          👉 Przesuń w prawo aby zobaczyć pełny cennik
-        </p>
+        {/* Mobile vertical cards */}
+        <div className="md:hidden space-y-8">
+          {/* Bilet Ulgowy */}
+          <div className="bg-muted/30 rounded-2xl p-6">
+            <h3 className="font-display font-bold text-xl text-center text-foreground mb-6">Bilet Ulgowy</h3>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="text-center">
+                <p className="inline-flex items-center gap-1.5 font-display font-bold mb-3">
+                  🌈 <span className="text-gradient-rainbow text-sm">Sesja Klasyczna</span>
+                </p>
+                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-pricing-orange">79 zł</span></p>
+                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-pricing-orange">89 zł</span></p>
+              </div>
+              <div className="text-center">
+                <p className="inline-flex items-center gap-1.5 font-display font-bold text-neon-pink mb-3 text-sm">
+                  ✨ Sesja FLUO
+                </p>
+                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-neon-pink">99 zł</span></p>
+                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-neon-pink">109 zł</span></p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bilet Normalny */}
+          <div className="bg-muted/30 rounded-2xl p-6">
+            <h3 className="font-display font-bold text-xl text-center text-foreground mb-6">Bilet Normalny</h3>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="text-center">
+                <p className="inline-flex items-center gap-1.5 font-display font-bold mb-3">
+                  🌈 <span className="text-gradient-rainbow text-sm">Sesja Klasyczna</span>
+                </p>
+                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-pricing-orange">99 zł</span></p>
+                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-pricing-orange">109 zł</span></p>
+              </div>
+              <div className="text-center">
+                <p className="inline-flex items-center gap-1.5 font-display font-bold text-neon-pink mb-3 text-sm">
+                  ✨ Sesja FLUO
+                </p>
+                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-neon-pink">109 zł</span></p>
+                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-neon-pink">119 zł</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="mt-8 bg-muted rounded-xl p-6 space-y-2 text-sm text-muted-foreground">
-          <p>👶 Dzieci poniżej 12 lat z opiekunem (opiekun: 10 zł). Przy jednym stanowisku mogą przebywać maksymalnie 2 osoby wliczając opiekuna.</p>
-          <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5 zł /<br className="md:hidden" /> fluo 7 zł, dodatkowe płótna 35 zł / 100 zł, strój ochronny 10 zł.</p>
+          <p>Dzieci <strong>poniżej 12 lat</strong> muszą przebywać z opiekunem, a koszt udziału opiekuna lub dodatkowej osoby przy stanowisku wynosi <strong>10 zł</strong> (cena obejmuje strój ochronny i ochraniacze na buty), przy czym przy jednym stanowisku mogą przebywać maksymalnie <strong>2 osoby</strong>.</p>
+          <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5 zł / fluo 7 zł, dodatkowe płótna 35 zł / 100 zł, strój ochronny 10 zł.</p>
           <p><strong>Bilet zawiera:</strong> płótno, farby, odzież ochronną, karton do transportu.</p>
-          <p>Minimalny wiek uczestnika to ukończone 3 lata.</p>
-          <p>Bilet ulgowy przysługuje dzieciom i młodzieży uczącej się do 18 roku życia, studentom, osobom z niepełnosprawnością oraz seniorom – za okazaniem ważnego dokumentu potwierdzającego uprawnienia.</p>
-          <p>Jedna osoba dorosła może mieć pod opieką maksymalnie 5 dzieci na sali.</p>
-          <p>Opiekun lub dodatkowa osoba do stanowiska otrzymują również strój ochronny i ochraniacze na buty.</p>
-          <p>Czas trwania sesji to 60 minut. W przypadku urodzin 120 min.</p>
+          <p>Minimalny wiek uczestnika to ukończone <strong>3 lata</strong>.</p>
+          <p>Honorujemy Kartę Dużej Rodziny - <strong>zniżka 10%</strong> na bilet wstępu.</p>
+          <p>Bilet ulgowy przysługuje dzieciom i młodzieży uczącej się <strong>do 18 roku</strong> życia, studentom, osobom z niepełnosprawnością oraz seniorom – za okazaniem ważnego dokumentu potwierdzającego uprawnienia.</p>
+          <p>Jedna osoba dorosła może mieć pod opieką maksymalnie <strong>5 dzieci</strong> na sali.</p>
+          <p>Czas trwania sesji to <strong>60 minut</strong>. W przypadku urodzin <strong>120 minut</strong>.</p>
         </div>
       </div>
     </section>
