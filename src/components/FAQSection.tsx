@@ -62,6 +62,10 @@ const faqs = [
     q: "Co dzieje się z obrazem po zakończeniu sesji?",
     a: "Gotową pracę zabieracie ze sobą do domu w zabezpieczonym, tekturowym opakowaniu.",
   },
+  {
+    q: "Jak do nas trafić?",
+    a: "Studio VIVA Kolor znajduje się w Gdańsku w centrum Wrzeszcza, na osiedlu Quattro Towers, tuż obok Galerii Manhattan. Po dotarciu do bram osiedla na domofonie wybieramy nr 1112. Po wejściu na teren kierujemy się prosto, aż do fontanny w kształcie kuli. Następnie skręcamy w lewo i na domofonie znowu wybieramy 1112. Studio VIVA Kolor znajduje się na pierwszym piętrze budynku usługowego, a nie mieszkalnego. Szukajcie naszych \"dzikich\" znaków na oknach i drzwiach. One zaprowadzą Was wprost do celu.",
+  },
 ];
 
 const FAQSection = () => {

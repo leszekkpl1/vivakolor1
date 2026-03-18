@@ -87,11 +87,18 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div className="w-full mt-12">
+      <div className="w-full mt-12 space-y-4">
         <img
           src="/images/wejscie-do-studia-malowania-viva-kolor-gdansk-wrzeszcz.webp"
           alt="Główne wejście do kreatywnego studia malowania Viva Kolor w Gdańsku Wrzeszczu (Quattro Towers), wskazówki dojazdu w Trójmieście"
           title="Wejście do studia malowania - Gdańsk Wrzeszcz"
+          loading="lazy"
+          className="w-full h-auto object-cover"
+        />
+        <img
+          src="/images/dokladne-wejscie-studio-malowania-viva-kolor-gdansk-wrzeszcz.webp"
+          alt="Dokładna droga i drugie wejście do kreatywnego studia malowania Viva Kolor w Gdańsku Wrzeszczu, instrukcja dojścia na pierwsze piętro"
+          title="Droga do studia Viva Kolor - Gdańsk Wrzeszcz"
           loading="lazy"
           className="w-full h-auto object-cover"
         />

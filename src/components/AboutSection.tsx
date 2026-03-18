@@ -4,9 +4,9 @@ import { CalendarCheck, MapPin, Palette, Sparkles, Home } from "lucide-react";
 const steps = [
   { icon: CalendarCheck, label: "Rezerwujesz termin" },
   { icon: MapPin, label: "Przyjeżdżasz" },
-  { icon: Palette, label: "Wybierasz kolory" },
+  { icon: Palette, label: "Dostajesz płótno, farby i odzież ochronną" },
   { icon: Sparkles, label: "Tworzysz" },
-  { icon: Home, label: "Zabierasz obraz do domu" },
+  { icon: Home, label: "Zabierasz obraz do domu w kartonie do transportu" },
 ];
 
 const AboutSection = () => {
