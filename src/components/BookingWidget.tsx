@@ -12,7 +12,7 @@ const BookingWidget = () => {
     (window as any).bookero_config = {
       id: 'WBUupiC2KLPG',
       container: 'bookero',
-      type: 'standard',
+      type: 'calendar',
       position: '',
       plugin_css: true,
       lang: 'pl'

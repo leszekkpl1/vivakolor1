@@ -211,7 +211,8 @@ const OffersSection = () => {
             <h5 className="text-xl font-display font-bold mb-4 text-foreground">Koszt i rezerwacja</h5>
             <p className="text-foreground mb-6">
               Koszt ok. 65 zł/os. (w zależności od wielkości grupy). Czas trwania sesji dla grupy to ok. 120 min.
-              <br className="hidden md:inline" />
+              <br />
+              <br className="md:hidden" />
               Zadzwoń lub napisz, aby ustalić termin i wycenę.
             </p>
             <a
