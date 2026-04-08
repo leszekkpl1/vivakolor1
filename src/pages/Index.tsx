@@ -37,6 +37,19 @@ const Index = () => {
     }
   }, [location.state]);
 
+  useEffect(() => {
+    const { hash } = location;
+    if (hash) {
+      const timeoutId = setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 150);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [location]);
+
   return (
     <>
       <Header />
