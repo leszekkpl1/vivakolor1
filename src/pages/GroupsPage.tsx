@@ -31,8 +31,8 @@ const GroupsPage = () => {
               Sesje dla grup przedszkolnych i szkolnych w Gdańsku
             </motion.h1>
             <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-              Warsztaty plastyczne i zajęcia kreatywne dla dzieci. Studio pomieści ok. 50 osób
-              w trzech salach.
+Warsztaty plastyczne i zajęcia kreatywne dla dzieci.{" "}
+              Studio pomieści ok. 50 osób w trzech salach.
             </p>
           </div>
         </section>

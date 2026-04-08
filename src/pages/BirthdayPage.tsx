@@ -48,8 +48,8 @@ const BirthdayPage = () => {
               Urodziny dla dzieci w Gdańsku
             </motion.h1>
             <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-              Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?
-              To idealna alternatywa dla sal zabaw. Czas trwania: 120 minut.
+Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?{" "}
+              To idealna alternatywa dla sal zabaw. Czas trwania: 120 minut.{" "}
               Salka urodzinowa na wyłączność.
             </p>
           </div>

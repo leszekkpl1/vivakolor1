@@ -40,10 +40,10 @@ const PricingSection = () => {
                 </th>
               </tr>
               <tr className="text-sm">
-                <th className="p-3 border-b border-border text-pricing-blue">Pon-Czw</th>
-                <th className="p-3 border-b border-border text-pricing-blue">Pt-Ndz</th>
-                <th className="p-3 border-b border-border text-pricing-blue">Pon-Czw</th>
-                <th className="p-3 border-b border-border text-pricing-blue">Pt-Ndz</th>
+                <th className="p-3 border-b border-border text-pricing-blue">Pon-Pt</th>
+                <th className="p-3 border-b border-border text-pricing-blue">Sob-Ndz</th>
+                <th className="p-3 border-b border-border text-pricing-blue">Pon-Pt</th>
+                <th className="p-3 border-b border-border text-pricing-blue">Sob-Ndz</th>
               </tr>
             </thead>
             <tbody>
@@ -83,15 +83,15 @@ const PricingSection = () => {
                 <p className="inline-flex items-center gap-1.5 font-display font-bold mb-3">
                   🌈 <span className="text-gradient-rainbow text-sm">Sesja Klasyczna</span>
                 </p>
-                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-pricing-orange">79 zł</span></p>
-                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-pricing-orange">89 zł</span></p>
+                <p className="text-foreground text-sm">Pon-Pt: <span className="font-bold text-pricing-orange">79 zł</span></p>
+                <p className="text-foreground text-sm">Sob-Ndz: <span className="font-bold text-pricing-orange">89 zł</span></p>
               </div>
               <div className="text-center">
                 <p className="inline-flex items-center gap-1.5 font-display font-bold text-neon-pink mb-3 text-sm">
                   ✨ Sesja FLUO
                 </p>
-                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-neon-pink">99 zł</span></p>
-                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-neon-pink">109 zł</span></p>
+                <p className="text-foreground text-sm">Pon-Pt: <span className="font-bold text-neon-pink">99 zł</span></p>
+                <p className="text-foreground text-sm">Sob-Ndz: <span className="font-bold text-neon-pink">109 zł</span></p>
               </div>
             </div>
           </div>
@@ -104,15 +104,15 @@ const PricingSection = () => {
                 <p className="inline-flex items-center gap-1.5 font-display font-bold mb-3">
                   🌈 <span className="text-gradient-rainbow text-sm">Sesja Klasyczna</span>
                 </p>
-                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-pricing-orange">99 zł</span></p>
-                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-pricing-orange">109 zł</span></p>
+                <p className="text-foreground text-sm">Pon-Pt: <span className="font-bold text-pricing-orange">99 zł</span></p>
+                <p className="text-foreground text-sm">Sob-Ndz: <span className="font-bold text-pricing-orange">109 zł</span></p>
               </div>
               <div className="text-center">
                 <p className="inline-flex items-center gap-1.5 font-display font-bold text-neon-pink mb-3 text-sm">
                   ✨ Sesja FLUO
                 </p>
-                <p className="text-foreground text-sm">Pon-Czw: <span className="font-bold text-neon-pink">109 zł</span></p>
-                <p className="text-foreground text-sm">Pt-Ndz: <span className="font-bold text-neon-pink">119 zł</span></p>
+                <p className="text-foreground text-sm">Pon-Pt: <span className="font-bold text-neon-pink">109 zł</span></p>
+                <p className="text-foreground text-sm">Sob-Ndz: <span className="font-bold text-neon-pink">119 zł</span></p>
               </div>
             </div>
           </div>

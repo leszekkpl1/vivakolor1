@@ -115,8 +115,8 @@ const OffersSection = () => {
                 Urodziny dla dzieci w Gdańsku
               </motion.h3>
               <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-                Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?<br className="hidden md:inline" />
-                To idealna alternatywa dla sal zabaw. Czas trwania: 120 minut.<br className="hidden md:inline" />
+Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?<br className="hidden md:inline" />{" "}
+                To idealna alternatywa dla sal zabaw. Czas trwania: 120 minut.<br className="hidden md:inline" />{" "}
                 Salka urodzinowa na wyłączność.
               </p>
             </div>
@@ -179,7 +179,7 @@ const OffersSection = () => {
                 <span className="md:hidden">Sesje dla grup przedszkolnych<br />i szkolnych w Gdańsku</span>
               </motion.h3>
               <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-                Warsztaty plastyczne i zajęcia kreatywne dla dzieci.<br className="hidden md:inline" />
+Warsztaty plastyczne i zajęcia kreatywne dla dzieci.<br className="hidden md:inline" />{" "}
                 Studio pomieści ok. 50 osób w trzech salach.
               </p>
             </div>
