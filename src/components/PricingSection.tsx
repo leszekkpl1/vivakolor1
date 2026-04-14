@@ -123,7 +123,7 @@ const PricingSection = () => {
           <p>Dzieci <strong>poniżej 12 lat</strong> muszą przebywać z opiekunem, a koszt udziału opiekuna lub dodatkowej osoby przy stanowisku wynosi <strong>10 zł</strong> (cena obejmuje strój ochronny i ochraniacze na buty), przy czym przy jednym stanowisku mogą przebywać maksymalnie <strong>2 osoby</strong>.</p>
           <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5zł / fluo 7zł, dodatkowe płótna 35 zł / 100 zł, strój ochronny 10 zł.</p>
           <p><strong>Bilet zawiera:</strong> płótno, farby, odzież ochronną, karton do transportu.</p>
-          <p>Minimalny wiek uczestnika to ukończone{" "}<br className="md:hidden" /><strong>3 lata</strong>.</p>
+          
           <p>Honorujemy Kartę Dużej Rodziny{" "}<br className="md:hidden" />- <strong>zniżka 10%</strong> na bilet wstępu.</p>
           <p>Jedna osoba dorosła może mieć pod opieką maksymalnie <strong>5 dzieci</strong> na sali.</p>
           <p>Czas trwania sesji to <strong>60 minut</strong>.{" "}<br className="md:hidden" />W przypadku urodzin <strong>120 minut</strong>.</p>

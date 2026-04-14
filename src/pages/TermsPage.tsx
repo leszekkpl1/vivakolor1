@@ -48,7 +48,7 @@ const TermsPage = () => {
                 <li>sesja fluo podczas której uczestnicy malują farbami plakatowymi świecącymi w świetle ultrafioletowym.</li>
               </ul>
             </li>
-            <li>Korzystać z usług, a także przebywać na salach do malowania, mogą wyłącznie osoby po ukończeniu 3 roku życia.</li>
+            
             <li>Osoby poniżej 12 roku życia mogą korzystać z usług wyłącznie będąc w towarzystwie osoby pełnoletniej (zwanej dalej opiekunem) która musi przebywać z tą osobą na sali do malowania przez cały czas trwania usługi.</li>
             <li>Jedna osoba pełnoletnia może mieć pod opieką maksymalnie 5 dzieci na sali.</li>
             <li>Przy jednym stanowisku mogą przebywać maksymalnie 2 osoby wliczając opiekuna.</li>
@@ -147,13 +147,11 @@ const TermsPage = () => {
             <li>Rodzaje biletów to:
               <ul className="list-disc pl-6 mt-1 space-y-1">
                 <li>bilet ulgowy,</li>
-                <li>bilet ulgowy + dodatkowa osoba / opiekun,</li>
-                <li>bilet normalny,</li>
-                <li>bilet normalny + dodatkowa osoba.</li>
+                <li>bilet normalny.</li>
               </ul>
             </li>
             <li>Bilet ulgowy przysługuje osobom do 18 roku życia za okazaniem ważnej legitymacji szkolnej, studentom, seniorom oraz osobom z niepełnosprawnością – po okazaniu dokumentu potwierdzającego uprawnienia.</li>
-            <li>Forma biletu zawierająca zwrot „+ dodatkowa osoba" uprawnia do korzystania z przestrzeni przez 2 osoby przy jednym stanowisku.</li>
+            
             <li>Rezerwację można przełożyć telefonicznie, poprzez e-mail bądź osobiście w lokalu.</li>
             <li>Rezerwację można odwołać samodzielnie telefonicznie, poprzez e-mail bądź osobiście w lokalu.</li>
             <li>Nieobecność uczestnika nie stanowi podstawy do zwrotu opłaty, chyba że Studio wyrazi zgodę na zmianę terminu.</li>
@@ -163,7 +161,7 @@ const TermsPage = () => {
             <li>Rezerwacja usługi dla zorganizowanych grup: Organizator umożliwia skorzystanie z usług zorganizowanym grupom na zasadach opisanych w poniższych ustępach. W kwestiach nieuregulowanych w tych ustępach i rozdziałach zastosowanie mają rozdziały dedykowane dla klientów indywidualnych.</li>
             <li>Rezerwacji usługi dla zorganizowanych grup można dokonać telefonicznie, mailowo lub osobiście w lokalu.</li>
             <li>Impreza urodzinowa w VIVA Kolor trwa 2 godziny i składa się z dwóch części: Malowania w wybranej przez uczestnika rezerwującego imprezę urodzinową sesji i czasem na poczęstunek dla uczestników urodzin w sali urodzinowej. Jeśli choć jeden uczestnik imprezy urodzinowej nie ukończył 12 roku życia w lokalu musi przebywać z nim pełnoletnia osoba. Minimalna liczba uczestników imprezy urodzinowej to 10 osób. Na czas imprezy urodzinowej uczestnikowi udostępniana jest sala urodzinowa. Całkowity koszt imprezy urodzinowej zależy od ilości uczestników jacy faktycznie byli obecni na imprezie urodzinowej i uczestniczyli w malowaniu podczas imprezy urodzinowej. Jednakże gdyby w imprezie urodzinowej ostatecznie uczestniczyło mniej niż 10 osób, to koszt imprezy urodzinowej będzie rozliczony jak gdyby na imprezie urodzinowej było obecne 10 osób. Po dokonaniu rezerwacji imprezy urodzinowej uczestnik otrzyma na podany przez siebie adres email wiadomość potwierdzającą dokonanie rezerwacji. Przy rezerwacji imprezy urodzinowej, uczestnik jest zobowiązany do wpłaty zadatku w wysokości 300 PLN. Uczestnik ma 3 dni na dokonanie wpłaty zadatku i przesłanie mailowo potwierdzenia jej wykonania, od momentu złożenia rezerwacji na imprezę urodzinową. W przypadku niedokonania czynności ze zdania poprzedzającego Studio anuluje rezerwację urodzin. Imprezę urodzinową można skutecznie odwołać lub przełożyć najpóźniej na 72 godziny przed godziną rozpoczęcia imprezy urodzinowej. W przypadku bezskutecznego odwołania imprezy urodzinowej, wpłacony zadatek nie podlega zwrotowi.</li>
-            <li>Wycieczka szkolna w Studio trwa 60 minut i składa się z malowania w wybranej sesji przez uczestnika rezerwującego wycieczkę szkolną. Organizacja wycieczki szkolnej jest możliwa wyłącznie dla osób powyżej 3 roku życia. Całkowity koszt wycieczki szkolnej zależy od ilości uczestników jacy faktycznie uczestniczyli w malowaniu podczas wycieczki szkolnej. Jednakże gdyby w wycieczce szkolnej uczestniczyło mniej niż 10 osób, to koszt wycieczki szkolnej będzie rozliczony jak gdyby na wycieczce szkolnej było obecne 10 osób.</li>
+            <li>Wycieczka szkolna w Studio trwa ok. 100 minut i składa się z malowania w wybranej sesji przez uczestnika rezerwującego wycieczkę szkolną. Całkowity koszt wycieczki szkolnej zależy od ilości uczestników jacy faktycznie uczestniczyli w malowaniu podczas wycieczki szkolnej. Jednakże gdyby w wycieczce szkolnej uczestniczyło mniej niż 10 osób, to koszt wycieczki szkolnej będzie rozliczony jak gdyby na wycieczce szkolnej było obecne 10 osób.</li>
           </ol>
 
           <h2>§9 Siła wyższa</h2>
