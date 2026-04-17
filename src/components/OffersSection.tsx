@@ -148,7 +148,8 @@ Szukasz oryginalnego miejsca na urodziny dla dziecka w Trójmieście?<br classNa
             <h5 className="text-xl font-display font-bold mb-4 text-foreground">Koszty i organizacja</h5>
             <ul className="space-y-3 text-foreground mb-6">
               <li className="flex gap-2"><span className="text-primary">•</span> Od 89 PLN / os. + 300 zł salka urodzinowa</li>
-              <li className="flex gap-2"><span className="text-primary">•</span> Min. 10 osób, max. 25 osób</li>
+              <li className="flex gap-2"><span className="text-primary">•</span> <span>Min. 10 osób, max. 22 osób</span></li>
+              <li className="text-sm text-muted-foreground pl-4">(w przypadku większej liczby osób prosimy o kontakt telefoniczny lub <span className="whitespace-nowrap">e-mailowy</span>)</li>
               <li className="flex gap-2"><span className="text-primary">•</span> Zapewniamy zastawę, szklane dzbanki, nóż do tortu</li>
             </ul>
             <a

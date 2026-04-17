@@ -39,8 +39,9 @@ const PrivacyPage = () => {
           <p>Gwarantujemy Ci poufność wszelkich przekazanych nam danych osobowych. Zapewniamy podjęcie wszelkich środków bezpieczeństwa i ochrony danych osobowych wymaganych przez przepisy o ochronie danych osobowych. Dane osobowe przetwarzane są wyłącznie na terytorium Unii Europejskiej.</p>
           <p>Powierzamy przetwarzanie danych osobowych następującym podmiotom:</p>
           <ul className="list-disc pl-6 space-y-1">
-            <li>Hostido.pl oraz Cloudflare.com – w celu przechowywania danych na serwerze,</li>
-            <li>Wp.pl – w celu korzystania z usługi zewnętrznego serwera pocztowego,</li>
+            <li>Cloudflare, Inc. – w celu hostingu strony, przyspieszenia jej ładowania (CDN) oraz ochrony przed atakami (zapisywane są dane eksploatacyjne, np. adresy IP).</li>
+            <li>GitHub, Inc. – jako dostawca infrastruktury do przechowywania kodu źródłowego i publikacji strony.</li>
+            <li>Hostido.pl – w celu utrzymania skrzynek poczty elektronicznej i obsługi korespondencji e-mail.</li>
             <li>Biuro Rachunkowe Iwona Jemielity – w celu korzystania z usług zewnętrznego biura rachunkowego.</li>
           </ul>
 
