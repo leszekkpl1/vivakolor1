@@ -26,7 +26,8 @@ const ContactSection = () => {
             <div className="flex gap-3 items-start">
               <Clock size={20} className="text-primary mt-1 shrink-0" />
               <div>
-                <p className="text-foreground">Pon-Pt: 12:00–20:00</p>
+                <p className="text-foreground">Pon-Pt: 15:00–20:00</p>
+                <p className="text-foreground">Czwartek - zamknięte</p>
                 <p className="text-foreground">Sob-Ndz: 10:00–21:00</p>
               </div>
             </div>
