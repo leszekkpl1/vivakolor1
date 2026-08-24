@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from "react";
-import { Menu, X, Phone, Mail, CalendarDays } from "lucide-react";
+import { useState } from "react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo-viva-kolor.webp";
 
@@ -18,21 +18,6 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const headerRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const updateHeaderHeight = () => {
-      if (headerRef.current) {
-        document.documentElement.style.setProperty(
-          "--header-height",
-          `${headerRef.current.offsetHeight}px`
-        );
-      }
-    };
-    updateHeaderHeight();
-    window.addEventListener("resize", updateHeaderHeight);
-    return () => window.removeEventListener("resize", updateHeaderHeight);
-  }, []);
 
   const scrollTo = (href: string) => {
     setIsOpen(false);
@@ -47,14 +32,7 @@ const Header = () => {
   };
 
   return (
-    <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
-      <div className="bg-gradient-rainbow text-primary-foreground">
-        <div className="container mx-auto px-4 py-2 flex items-center justify-center gap-2 text-xs md:text-sm font-medium text-center">
-          <CalendarDays size={16} className="shrink-0" />
-          <span>Studio Viva Kolor będzie zamknięte w dniach od 15.08.2026 do 23.08.2026</span>
-        </div>
-      </div>
-
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <a
           href="/"
@@ -119,7 +97,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 md:hidden" style={{ top: "var(--header-height)" }} onClick={() => setIsOpen(false)}>
+        <div className="fixed top-16 md:top-20 inset-0 z-40 md:hidden" onClick={() => setIsOpen(false)}>
           <div
             className="absolute top-0 left-0 right-0 max-h-[66vh] bg-foreground/85 backdrop-blur-2xl border-b border-border overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
