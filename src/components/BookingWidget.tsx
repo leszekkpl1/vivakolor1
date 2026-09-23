@@ -65,6 +65,9 @@ const BookingWidget = () => {
           <p style={{ fontSize: '15px', maxWidth: '800px', margin: '0 auto', lineHeight: '1.5' }}>
             Wszystkie opcje dodatkowe oraz imprezy grupowe (urodziny, sesje szkolne) i ich koszt opisane zostały na naszej stronie vivakolor.pl
           </p>
+          <p style={{ fontSize: '15px', maxWidth: '800px', margin: '0 auto', lineHeight: '1.5' }}>
+            Przed umówioną wizytą proszę przyjść 10 min. wcześniej.
+          </p>
         </div>
 
         <style>

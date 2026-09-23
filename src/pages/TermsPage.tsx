@@ -7,7 +7,7 @@ const TermsPage = () => {
     <>
       <Header />
       <main className="pt-24 pb-20">
-        <article className="container mx-auto px-4 max-w-3xl prose prose-headings:font-display prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-strong:text-foreground">
+        <article className="container mx-auto px-4 max-w-3xl prose prose-h2:!mt-12 prose-h2:!mb-4 prose-headings:font-display prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-strong:text-foreground">
           <h1 className="text-3xl md:text-4xl font-display font-black mb-8 text-foreground">
             Regulamin Studia
           </h1>
@@ -162,6 +162,7 @@ const TermsPage = () => {
             <li>Rezerwacji usługi dla zorganizowanych grup można dokonać telefonicznie, mailowo lub osobiście w lokalu.</li>
             <li>Impreza urodzinowa w VIVA Kolor trwa 2 godziny i składa się z dwóch części: Malowania w wybranej przez uczestnika rezerwującego imprezę urodzinową sesji i czasem na poczęstunek dla uczestników urodzin w sali urodzinowej. Jeśli choć jeden uczestnik imprezy urodzinowej nie ukończył 12 roku życia w lokalu musi przebywać z nim pełnoletnia osoba. Minimalna liczba uczestników imprezy urodzinowej to 10 osób. Na czas imprezy urodzinowej uczestnikowi udostępniana jest sala urodzinowa. Całkowity koszt imprezy urodzinowej zależy od ilości uczestników jacy faktycznie byli obecni na imprezie urodzinowej i uczestniczyli w malowaniu podczas imprezy urodzinowej. Jednakże gdyby w imprezie urodzinowej ostatecznie uczestniczyło mniej niż 10 osób, to koszt imprezy urodzinowej będzie rozliczony jak gdyby na imprezie urodzinowej było obecne 10 osób. Po dokonaniu rezerwacji imprezy urodzinowej uczestnik otrzyma na podany przez siebie adres email wiadomość potwierdzającą dokonanie rezerwacji. Przy rezerwacji imprezy urodzinowej, uczestnik jest zobowiązany do wpłaty zadatku w wysokości 300 PLN. Uczestnik ma 3 dni na dokonanie wpłaty zadatku i przesłanie mailowo potwierdzenia jej wykonania, od momentu złożenia rezerwacji na imprezę urodzinową. W przypadku niedokonania czynności ze zdania poprzedzającego Studio anuluje rezerwację urodzin. Imprezę urodzinową można skutecznie odwołać lub przełożyć najpóźniej na 72 godziny przed godziną rozpoczęcia imprezy urodzinowej. W przypadku bezskutecznego odwołania imprezy urodzinowej, wpłacony zadatek nie podlega zwrotowi.</li>
             <li>Wycieczka szkolna w Studio trwa ok. 100 minut i składa się z malowania w wybranej sesji przez uczestnika rezerwującego wycieczkę szkolną. Całkowity koszt wycieczki szkolnej zależy od ilości uczestników jacy faktycznie uczestniczyli w malowaniu podczas wycieczki szkolnej. Jednakże gdyby w wycieczce szkolnej uczestniczyło mniej niż 10 osób, to koszt wycieczki szkolnej będzie rozliczony jak gdyby na wycieczce szkolnej było obecne 10 osób.</li>
+            <li>Przed umówioną wizytą proszę przyjść 10 min. wcześniej.</li>
           </ol>
 
           <h2>§9 Siła wyższa</h2>

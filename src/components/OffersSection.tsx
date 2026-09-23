@@ -211,7 +211,7 @@ Warsztaty plastyczne i zajęcia kreatywne dla dzieci.<br className="hidden md:in
           <div className="bg-card rounded-xl p-6 max-w-2xl mx-auto border border-border">
             <h5 className="text-xl font-display font-bold mb-4 text-foreground">Koszt i rezerwacja</h5>
             <p className="text-foreground mb-6">
-              Koszt ok. 65 zł/os. (w zależności od wielkości grupy). Czas trwania sesji dla grupy to ok. 100 min.
+              Koszt ok. 65 zł/os. (w zależności od wielkości grupy). Czas trwania sesji dla grupy to ok. 90 min.
               <br />
               <br className="md:hidden" />
               Zadzwoń lub napisz, aby ustalić termin i wycenę.

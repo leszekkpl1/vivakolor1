@@ -121,12 +121,13 @@ const PricingSection = () => {
         <div className="mt-8 bg-muted rounded-xl p-6 space-y-2 text-sm text-muted-foreground">
           <p><strong>Bilet ulgowy</strong> przysługuje dzieciom i młodzieży uczącej się <strong>do 18 roku</strong> życia, studentom, osobom z niepełnosprawnością oraz seniorom – za okazaniem ważnego dokumentu potwierdzającego uprawnienia.</p>
           <p>Dzieci <strong>poniżej 12 lat</strong> muszą przebywać z opiekunem, a koszt udziału opiekuna lub dodatkowej osoby przy stanowisku wynosi <strong>10 zł</strong> (cena obejmuje strój ochronny i ochraniacze na buty), przy czym przy jednym stanowisku mogą przebywać maksymalnie <strong>2 osoby</strong>.</p>
-          <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5zł / fluo 7zł, dodatkowe płótna 35 zł / 100 zł, strój ochronny 10 zł.</p>
+          <p><strong>Opcje dodatkowe:</strong> farby zwykłe 5zł / fluo 7zł, dodatkowe płótna 30 zł / 60 zł, strój ochronny 10 zł.</p>
           <p><strong>Bilet zawiera:</strong> płótno, farby, odzież ochronną, karton do transportu.</p>
           
           <p>Honorujemy Kartę Dużej Rodziny{" "}<br className="md:hidden" />- <strong>zniżka 10%</strong> na bilet wstępu.</p>
           <p>Jedna osoba dorosła może mieć pod opieką maksymalnie <strong>5 dzieci</strong> na sali.</p>
           <p>Czas trwania sesji to <strong>60 minut</strong>.{" "}<br className="md:hidden" />W przypadku urodzin <strong>120 minut</strong>.</p>
+          <p>Przed umówioną wizytą proszę przyjść <strong>10 min. wcześniej</strong>.</p>
         </div>
       </div>
     </section>
